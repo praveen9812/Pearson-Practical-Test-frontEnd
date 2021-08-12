@@ -1,0 +1,22 @@
+<div class="container">
+    <div class ="mat-display-3"  >Add new Country</div>
+
+    <form #addcountryform="ngForm" (ngSubmit)="addCountrytformsubmit()">
+      
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label >Name:</mat-label>
+     <input matInput type="text" size="150" required [(ngModel)]="country.name" name="name">
+    <mat-hint align="end">Letters only</mat-hint>  
+    </mat-form-field>
+      </div>
+     
+
+     
+      
+      <button mat-raised-button color="primary" style="background-color: rgb(63, 155, 83);position: absolute;
+      left: 755px;" type="submit" >Add Country</button>
+      <button mat-raised-button color="primary" style="background-color: rgb(129, 174, 204);position: absolute;
+      left: 675px;" type="submit"  (click)="gotolist()">Back</button>
+    </form>
+  </div> 

@@ -1,0 +1,16 @@
+
+form {
+    text-align: center;
+    height: 40px;
+    width: 100%;
+  }
+  .mat-display-3{
+    text-align: center;
+    padding-top: 50px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }

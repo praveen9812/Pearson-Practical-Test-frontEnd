@@ -1,0 +1,22 @@
+
+<div class="container">
+  <div class ="mat-display-3"  >Edit country</div>
+
+    <form #addcountryform="ngForm" (ngSubmit)="updateCountrytformsubmit()">
+      
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label >Name:</mat-label>
+     <input matInput type="text" size="150" required [(ngModel)]="country.name" name="name">
+    <mat-hint align="end">Letters only</mat-hint>  
+    </mat-form-field>
+
+      </div>
+    
+      
+      <button mat-raised-button color="primary" style="background-color: rgb(78, 214, 107);position: absolute;
+      left: 770px;" type="submit" >Update</button>
+      <button mat-raised-button color="primary" style="background-color: rgb(129, 174, 204);position: absolute;
+      left:690px;" type="submit"  (click)="gotolist()">Back</button>
+    </form>
+  </div>
